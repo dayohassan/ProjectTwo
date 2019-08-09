@@ -16,4 +16,7 @@ app.set("view engine", "handlebars")
 require('./controllers/apiRoutes')(app)
 require('./controllers/htmlRoutes')(app)
 
-app.listen(PORT, function(){ console.log("Running")})
+const db = require('./models');
+db.sequelize.sync().then(function(){
+    app.listen(PORT, function(){ console.log("Running")})
+})

@@ -1,7 +1,12 @@
-module.exports = function(app){
+const db = require('../models');
 
-    app.get("/", function(req, res){
-        res.render("index", { data: process.env.SECRET_TEXT })
+module.exports = function (app) {
+
+    app.get("/", function (req, res) {
+        db.Listing.findAll({})
+            .then(function (data) {
+                res.render("index", data)
+            })
     })
-    
+
 }
