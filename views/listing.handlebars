@@ -1,0 +1,25 @@
+<h1>Listing Page</h1>
+
+<h2>Available</h2>
+<ul>
+    {{#each house}}
+    {{#if isAvailable}}
+        <li>
+            {{> listing/listing-block}}
+        </li>
+        {{/if}}
+    {{/each}}
+</ul>
+<h2>Sold</h2>
+<ul>
+    {{#each house}}
+    {{#unless isAvailable}}
+        <li>
+            {{> listing/listing-block}}
+        </li>
+        {{/unless}}
+    {{/each}}
+</ul>
+
+
+<a href="/">Add Home</a>

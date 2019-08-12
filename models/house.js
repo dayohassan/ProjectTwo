@@ -1,6 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
-    var listing = sequelize.define("Listing", {
-        name: {
+    var house = sequelize.define("House", {
+        address: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -12,10 +12,18 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             allowNull: false
         },
+        beds: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        baths: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
         isAvailable: {
             type: DataTypes.BOOLEAN,
-            default: true
+            defaultValue: true
         }
     })
-    return listing;
+    return house;
 }

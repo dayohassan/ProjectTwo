@@ -5,6 +5,7 @@ USE houseListing_DB;
 
 CREATE TABLE houseSearch(
   id INT NOT NULL AUTO_INCREMENT,
+  isAvailable BOOLEAN DEFAULT true,
   price DECIMAL(10,4) NULL,
   beds DECIMAL(10,4) NULL,
   baths DECIMAL(10,4) NULL,
