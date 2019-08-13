@@ -5,7 +5,7 @@
 // consult the activities in 15.2 for a run down of how this file functions.
 
 "use strict";
-
+//Creating variables?
 var fs = require("fs");
 var path = require("path");
 var Sequelize = require("sequelize");
@@ -19,7 +19,7 @@ if (config.use_env_variable) {
 } else {
   var sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
-
+//Please explain?
 fs
   .readdirSync(__dirname)
   .filter(function(file) {
@@ -35,7 +35,7 @@ Object.keys(db).forEach(function(modelName) {
     db[modelName].associate(db);
   }
 });
-
+//connects to sequelize database
 db.sequelize = sequelize;
 db.Sequelize = Sequelize; 
 

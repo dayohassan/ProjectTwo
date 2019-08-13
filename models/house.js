@@ -1,3 +1,5 @@
+//This returns the house search info?
+
 module.exports = function (sequelize, DataTypes) {
     var house = sequelize.define("House", {
         address: {
