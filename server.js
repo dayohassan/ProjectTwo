@@ -1,3 +1,5 @@
+
+// This is the setup to run our server
 require('dotenv').config()
 const express = require('express');
 const PORT = process.env.PORT || 8000;
@@ -10,10 +12,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const exhbs = require('express-handlebars');
+// This sets up and starts the handlebars engine.
 app.engine("handlebars", exhbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars")
-
+// This handles the incoming HTTP request and sends response back to the caller
 require('./controllers/apiRoutes')(app)
+// This get the requested data from the models, create an HTML page displaying the data, and return it to the user to view in the browser
 require('./controllers/htmlRoutes')(app)
 
 const db = require('./models');
