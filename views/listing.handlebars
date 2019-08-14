@@ -1,16 +1,22 @@
-<h1>Listing Page</h1>
-{{!-- This adds the submitted house to our listing page  --}}
-<h2>Available</h2>
-<ul>
-    {{#each house}}
-    {{#if isAvailable}}
-        <li>
-            {{> listing/listing-block}}
-        </li>
-        {{/if}}
-    {{/each}}
-</ul>
-<h2>Sold</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="jumbotron">
+
+
+                <h1>Listing Page</h1>
+                {{!-- This adds the submitted house to our listing page  --}}
+                <h2>Available</h2>
+                <ul>
+                    {{#each house}}
+                    {{#if isAvailable}}
+                    <li>
+                        {{> listing/listing-block}}
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+                {{!-- <h2>Sold</h2>
 <ul>
     {{#each house}}
     {{#unless isAvailable}}
@@ -20,6 +26,6 @@
         {{/unless}}
     {{/each}}
 </ul>
+ --}}
 
-
-<a href="/">Add Home</a>
+                <a href="/">Main Page</a>
