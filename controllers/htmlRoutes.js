@@ -7,10 +7,10 @@ module.exports = function (app) {
             raw: true,
             limit: 3,
             where: {
-                isAvailable: 1
+                isAvailable: 1,
+                favorite: 1
             }
         }).then(function (data) {
-            console.log(data)
             res.render("home", {
                 house: data
             })

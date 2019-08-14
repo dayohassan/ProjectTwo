@@ -24,7 +24,11 @@ module.exports = function (sequelize, DataTypes) {
         },
         isAvailable: {
             type: DataTypes.BOOLEAN,
-            defaultValue: true
+            defaultValue: 1
+        },
+        favorite: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: 0
         }
     })
     return house;
