@@ -5,4 +5,29 @@
     <p>{{description}}</p>
     Beds: {{beds}} <br/>
     Bathrooms: {{baths}} <br/>
+
+    {{#if isAvailable}}
+    <form action="/api/sellhouse" method="POST">
+        <input type="text" name="id" style="display: none;" value={{id}}/>
+        <input type="submit" value="Buy House" />
+    </form>
+    {{else}}
+    <form action="/api/removehouse" method="POST">
+        <input type="text" name="id" style="display: none;" value={{id}}/>
+        <input type="submit" value="Remove House" />
+    </form>
+
+    {{/if}}
+
+    {{#if favorite}}
+    <form action="/api/dropfav" method="POST">
+        <input type="text" name="id" style="display: none;" value={{id}}/>
+        <input type="submit" value="Remove House" />
+    </form>
+    {{else}}
+    <form action="/api/addfav" method="POST">
+        <input type="text" name="id" style="display: none;" value={{id}}/>
+        <input type="submit" value="Save House" />
+    </form>
+    {{/if}}
 </div>

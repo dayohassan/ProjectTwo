@@ -10,12 +10,57 @@ module.exports = function (app) {
     })
 
     app.get("/api/deleteListings", function (req, res) {
-        db.House.destroy({
-            truncate: true
-        }).then(function (data) {
-            res.redirect("/")
+        db.House.destroy(
+            {where: {
+                isAvailable: 0
+            }},
+            { truncate: true }
+            ).then(function (data) {
+            res.redirect("/listing")
         })
     })
 
-
+    app.post("/api/sellhouse", function(req, res){
+        db.House.update(
+            { isAvailable: 0 },
+            { where : {
+                id: req.body.id.split("/")[0]
+            }}
+        ).then(function(data){
+            console.log(data)
+            res.redirect("/listing")
+        })
+    })
+    app.post("/api/addfav", function(req, res){
+        db.House.update(
+            { favorite: 1 },
+            { where : {
+                id: req.body.id.split("/")[0]
+            }}
+        ).then(function(data){
+            console.log(data)
+            res.redirect("/listing")
+        })
+    })
+    app.post("/api/dropfav", function(req, res){
+        db.House.update(
+            { favorite: 0 },
+            { where : {
+                id: req.body.id.split("/")[0]
+            }}
+        ).then(function(data){
+            console.log(data)
+            res.redirect("/listing")
+        })
+    })
+    app.post("/api/removehouse", function(req, res){
+        db.House.destroy(
+            { where : {
+                id: req.body.id.split("/")[0]
+            }}
+        ).then(function(data){
+            console.log(data)
+            res.redirect("/listing")
+        })
+    })
 }

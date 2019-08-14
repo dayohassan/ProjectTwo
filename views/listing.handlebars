@@ -16,16 +16,13 @@
                     {{/if}}
                     {{/each}}
                 </ul>
-                {{!-- <h2>Sold</h2>
-<ul>
-    {{#each house}}
-    {{#unless isAvailable}}
-        <li>
-            {{> listing/listing-block}}
-        </li>
-        {{/unless}}
-    {{/each}}
-</ul>
- --}}
-
-                <a href="/">Main Page</a>
+                <h2>Sold</h2>
+                <ul>
+                    {{#each house}}
+                    {{#unless isAvailable}}
+                    <li>
+                        {{> listing/listing-block}}
+                    </li>
+                    {{/unless}}
+                    {{/each}}
+                </ul>
