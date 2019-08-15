@@ -24,7 +24,7 @@ module.exports = function (app) {
     })
     app.get("/listing", function (req, res) {
         db.House.findAll({
-                raw: true
+                raw: true,
             })
             .then(function (data) {
                 res.render("listing", {
