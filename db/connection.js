@@ -17,6 +17,7 @@ if (process.env.JAWSDB_URL) {
   });
 }
 
+// Old code
 // This code will turn BOOLEAN 0's and 1's returned from db into true or false
 // connection.config.typeCast = function(field, next) {
 //   if (field.type == "TINY" && field.length == 1) {

@@ -1,4 +1,4 @@
-//This returns the house search info?
+//This returns the house search info in mysql
 
 module.exports = function (sequelize, DataTypes) {
     var house = sequelize.define("House", {
