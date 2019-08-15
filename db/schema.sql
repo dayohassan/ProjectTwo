@@ -1,3 +1,5 @@
+
+-- Drops the houseListing_DB if it currently exists  --
 DROP DATABASE IF EXISTS houseListing_DB;
 CREATE DATABASE houseListing_DB;
 

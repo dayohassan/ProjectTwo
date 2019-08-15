@@ -1,3 +1,4 @@
+//This returns the house search info in mysql
 module.exports = function (sequelize, DataTypes) {
     var listing = sequelize.define("Listing", {
         name: {
