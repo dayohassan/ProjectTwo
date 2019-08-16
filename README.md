@@ -149,6 +149,6 @@ listing.js
 
 
 
-The final produc of this application can be viewed on  
+The final product of this application can be viewed on  
 
 ```https://fsbo-home-tracker.herokuapp.com/```
