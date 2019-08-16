@@ -1,18 +1,22 @@
-My Personal FSBO House Tracker
+My Personal FSBO House Tracker:
+
 
 My Personal FSBO House Tracker lets you keep track of potential home purchases by adding them, deleting them, and make a favorites list.  You will also have the ability to be able to add a house you purchased to the sold list, which is great for investors that purchase multiple investment properties.
 
-TOOLS USED
+TOOLS USED:
+
 We used Node, NySql, Sequalize, and Handlebars to build the app.
 
-THE MVC REQUIREMENT
+THE MVC REQUIREMENT:
+
 This basically states the minimumn coding requirement for the project and how the project files are arranged, the front-end and the back-end. 
 
   <img width="260" alt="Screen Shot 2019-08-15 at 11 15 50 AM" src="https://user-images.githubusercontent.com/36799420/63106340-97686180-bf50-11e9-92ec-dc6f0c5c2e6f.png">
 
 
 
-LAYOUTS
+LAYOUTS:
+
 
 This application runs on a server.js with a Port which listens and sync the database. 
 
@@ -28,7 +32,8 @@ const app = express();
  ```
 
 
-HANDLEBARS
+HANDLEBARS:
+
 
 The Main and Partial Handle bars were created in the list of view file. 
 
@@ -137,18 +142,21 @@ The listing-bloc.handlebars
 </div>
 
 ```
-The index.js 
+The index.js:
+
 
 <img width="712" alt="Screen Shot 2019-08-16 at 11 30 52 AM" src="https://user-images.githubusercontent.com/36799420/63179069-58eaa980-c019-11e9-805b-067d0b88d973.png">
 
 
-listing.js
+listing.js:
+
 
 <img width="435" alt="Screen Shot 2019-08-16 at 11 32 34 AM" src="https://user-images.githubusercontent.com/36799420/63179186-8fc0bf80-c019-11e9-98a6-723ef7245207.png">
 
 
 
 
-The final produc of this application can be viewed on  
+The final product of this application can be viewed on:
+
 
 ```https://fsbo-home-tracker.herokuapp.com/```
