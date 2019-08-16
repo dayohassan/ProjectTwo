@@ -5,7 +5,7 @@ My Personal FSBO House Tracker lets you keep track of potential home purchases b
 
 TOOLS USED:
 
-We used Node, NySql, Sequalize, and Handlebars to build the app.
+Node.js, MySql, Sequalize, Bootstrap and Handlebars to build the app.
 
 THE MVC REQUIREMENT:
 
@@ -62,7 +62,7 @@ The Main and Partial Handle bars were created in the list of view file.
 
 ```
 
-The about Handlebars handles the about secxtion of the application page. 
+about.handlebars handles the about section of the application page. 
 
 ```html
 
@@ -76,7 +76,7 @@ div class="container">
 
 ```
 
-The home.handlebars has the about and listings.
+ home.handlebars has the about and listings.
 
 ```html
 
@@ -103,7 +103,7 @@ The home.handlebars has the about and listings.
 
 ```
 
-The listing-bloc.handlebars 
+ listing-bloc.handlebars 
 
 ```html
 
@@ -142,7 +142,7 @@ The listing-bloc.handlebars
 </div>
 
 ```
-The index.js:
+ index.js:
 
 
 <img width="712" alt="Screen Shot 2019-08-16 at 11 30 52 AM" src="https://user-images.githubusercontent.com/36799420/63179069-58eaa980-c019-11e9-805b-067d0b88d973.png">
