@@ -7,6 +7,17 @@ TOOLS USED:
 
 Node.js, MySql, Sequalize, Bootstrap and Handlebars to build the app.
 
+
+LANDING PAGE:
+
+<img width="1440" alt="Screen Shot 2019-12-03 at 11 17 41 AM" src="https://user-images.githubusercontent.com/36799420/70069223-6c695280-15bf-11ea-9aff-4edc8bbf1dfc.png">
+
+This show how your search is saved for future reference.
+
+<img width="1440" alt="Screen Shot 2019-12-03 at 11 18 10 AM" src="https://user-images.githubusercontent.com/36799420/70069415-bbaf8300-15bf-11ea-9a99-d8a133080947.png">
+
+
+
 THE MVC REQUIREMENT:
 
 This basically states the minimumn coding requirement for the project and how the project files are arranged, the front-end and the back-end. 
