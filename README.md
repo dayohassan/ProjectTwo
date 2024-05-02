@@ -1,7 +1,7 @@
 My Personal FSBO House Tracker:
 
 
-My Personal FSBO House Tracker lets you keep track of potential home purchases by adding them, deleting them, and make a favorites list.  You will also have the ability to be able to add a house you purchased to the sold list, which is great for investors that purchase multiple investment properties.
+My Personal FSBO House Tracker lets you keep track of potential home purchases by adding them, deleting them, and making a favorites list.  You will also have the ability to be able to add a house you purchased to the sold list, which is great for investors who purchase multiple investment properties.
 
 TOOLS USED:
 
@@ -9,7 +9,7 @@ Node.js, MySql, Sequalize, Bootstrap and Handlebars to build the app.
 
 THE MVC REQUIREMENT:
 
-This basically states the minimumn coding requirement for the project and how the project files are arranged, the front-end and the back-end. 
+This states the minimum coding requirement for the project and how the project files are arranged, the front-end and the back-end. 
 
   <img width="260" alt="Screen Shot 2019-08-15 at 11 15 50 AM" src="https://user-images.githubusercontent.com/36799420/63106340-97686180-bf50-11e9-92ec-dc6f0c5c2e6f.png">
 
@@ -18,9 +18,9 @@ This basically states the minimumn coding requirement for the project and how th
 LAYOUTS:
 
 
-This application runs on a server.js with a Port which listens and sync the database. 
+This application runs on a server.js with a Port which listens and syncs the database. 
 
-```js
+``` js
         require('dotenv').config()
 const express = require('express');
 const PORT = process.env.PORT || 8000;
@@ -35,9 +35,9 @@ const app = express();
 HANDLEBARS:
 
 
-The Main and Partial Handle bars were created in the list of view file. 
+The Main and Partial Handlebars were created in the list of view files. 
 
-```html
+```HTML
 
 
 {{!-- Main handlebars page --}}
@@ -62,9 +62,9 @@ The Main and Partial Handle bars were created in the list of view file.
 
 ```
 
-about.handlebars handles the about section of the application page. 
+about. handlebars handles the about section of the application page. 
 
-```html
+```HTML
 
 div class="container">
     <div class="row">
@@ -76,9 +76,9 @@ div class="container">
 
 ```
 
- home.handlebars has the about and listings.
+ home. handlebars have the about and listings.
 
-```html
+```HTML
 
  <div class="container">
     <div class="row">
